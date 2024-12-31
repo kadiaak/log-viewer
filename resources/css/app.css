@@ -1,0 +1,40 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+    --lv-font: 'Inter', ui-sans-serif, system-ui, -apple-system, sans-serif;
+    --lv-mono: 'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, monospace;
+}
+
+[x-cloak] {
+    display: none !important;
+}
+
+html,
+body {
+    font-family: var(--lv-font);
+}
+
+.font-mono,
+pre {
+    font-family: var(--lv-mono);
+}
+
+/* Slim, themed scrollbars */
+*::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+}
+
+*::-webkit-scrollbar-thumb {
+    background: rgb(148 163 184 / 0.4);
+    border-radius: 9999px;
+    border: 2px solid transparent;
+    background-clip: content-box;
+}
+
+*::-webkit-scrollbar-thumb:hover {
+    background: rgb(148 163 184 / 0.6);
+    background-clip: content-box;
+}
